@@ -24,3 +24,13 @@ const swiperTest = new Swiper('.testimonials__slider', {
     prevEl: '.testimonials__prev',
   },
 });
+
+
+
+var burgerMenu = document.querySelector('.burger');
+var navMenu = document.querySelector('.header__top');
+
+burgerMenu.addEventListener('click', function(){
+  burgerMenu.classList.toggle('open');  
+  navMenu.classList.toggle('open');
+});
