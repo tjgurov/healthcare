@@ -1,4 +1,3 @@
-
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
@@ -29,8 +28,11 @@ const swiperTest = new Swiper('.testimonials__slider', {
 
 var burgerMenu = document.querySelector('.burger');
 var navMenu = document.querySelector('.header__top');
+var overlay = document.querySelector('.overlay');
 
-burgerMenu.addEventListener('click', function(){
-  burgerMenu.classList.toggle('open');  
+burgerMenu.addEventListener('click', function () {
+  burgerMenu.classList.toggle('open');
   navMenu.classList.toggle('open');
+  overlay.classList.toggle('show');
 });
+
