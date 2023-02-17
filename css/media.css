@@ -259,6 +259,9 @@
   .main__booking {
     padding: 120px 0 60px 0;
 }
+.main__mobile {
+  padding-bottom: 60px;
+}
 .footer__top {
   padding-bottom: 28px;
 }
