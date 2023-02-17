@@ -259,6 +259,12 @@
   .main__booking {
     padding: 120px 0 60px 0;
 }
+.footer__top {
+  padding-bottom: 28px;
+}
+.footer__form-input {
+  margin-bottom: 20px;
+}
 }
 
 /*==========================================================550px==================================================*/
@@ -305,6 +311,10 @@
   .service__text {
     line-height: 12px;
   }
+
+  .service__list {
+    margin-bottom: 40px;
+}
 
   /*---------------------------------------------------------*/
 
