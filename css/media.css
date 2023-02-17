@@ -1,12 +1,29 @@
-@media (max-width: 1100px) {}
+@media (max-width: 1200px) {
+  .doctors__list {}
 
+  .doctors__item {
+    margin-bottom: 36px;
+  }
+
+  .testimonials__item {
+    height: 400px !important;
+  }
+}
+
+/*==========================================================1000px==================================================*/
 
 
 @media (max-width:1000px) {
   .header__image {
     display: none;
   }
+
+  .testimonials__item {
+    height: 350px !important;
+  }
 }
+
+/*==========================================================900px==================================================*/
 
 @media (max-width:900px) {
   .overlay {
@@ -15,11 +32,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 50;
+    z-index: 100;
     background: rgba(0, 0, 0, 0.349);
     visibility: hidden;
     opacity: 0;
-    transition: all .3s;
+    transition: all .5s;
   }
 
   .overlay.show {
@@ -39,6 +56,15 @@
     transform: rotate(-45deg);
   }
 
+  .burger--follow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: #1c273024;
+    right: 2.5%;
+    top: 3%;
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+  }
+
   .header__top {
     position: fixed;
     display: flex;
@@ -48,9 +74,10 @@
     bottom: 0;
     right: 0;
     min-width: 320px;
-    transition: all .4s;
+    transition: all .8s cubic-bezier(0.8, 0, 0.33, 1);
+    backdrop-filter: blur(20px);
     z-index: 100;
-    background-color: #fff;
+    background: rgba(0, 0, 0, 0.45);
     transform: translateX(100%);
   }
 
@@ -72,6 +99,7 @@
   .header__nav-item:nth-child(4) {
     margin: 0 0 70px 0;
     font-size: 18px;
+    color: #fff;
   }
 
 
@@ -158,7 +186,78 @@
     margin: 40px 0 0 0;
   }
 
+  /*---------------------------------------------------------*/
+
+  .doctors__list {
+    grid-template: repeat(2, auto) / repeat(2, 1fr);
+    margin-bottom: 40px;
+    gap: 0 28px;
+  }
+
+  /*---------------------------------------------------------*/
+
+  .mobile__inner {
+    flex-direction: column;
+  }
+
+  .mobile__image {
+    margin-left: 0;
+  }
+
+  /*---------------------------------------------------------*/
+
+  .footer__inner {
+    flex-direction: column;
+  }
+
+  .footer__contacts-box {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .footer__column {
+    margin-bottom: 20px;
+  }
+
+  .footer__column-title--slide {
+    pointer-events: auto;
+    margin-bottom: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__column-title--slide::after {
+    border-style: solid;
+    border-width: 0.2em 0.2em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.45em;
+    left: 0.15em;
+    position: relative;
+    top: 0;
+    transform: rotate(135deg);
+    vertical-align: middle;
+    width: 0.45em;
+    margin-left: 12px;
+  }
+
+
+  .footer__column-list {
+    display: none;
+  }
 }
+
+/*==========================================================700px==================================================*/
+
+@media (max-width: 700px) {
+  .mobile__image {
+    display: none;
+  }
+}
+
+/*==========================================================550px==================================================*/
+
 
 @media (max-width: 550px) {
   .header__form {
@@ -191,5 +290,102 @@
 
   .solutions__bottom-image {
     display: none;
+  }
+
+  .service__link {
+    padding: 10px 50px 20px 50px;
+  }
+
+
+  .service__text {
+    line-height: 12px;
+  }
+
+  /*---------------------------------------------------------*/
+
+  .doctors__heading {
+    margin-bottom: 50px;
+  }
+
+  /*---------------------------------------------------------*/
+  .booking__box::before {
+    display: none;
+  }
+
+  .booking__box {
+    padding: 82px 0 92px 40px;
+  }
+
+  .booking__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    max-width: 402px;
+    margin-bottom: 21px;
+  }
+}
+
+/*==========================================================450px==================================================*/
+
+
+@media (max-width: 450px) {
+  .service__name {
+    margin-bottom: 10px;
+  }
+
+  .service__link img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .service__link {
+    padding: 0 50px 10px 50px;
+    min-height: none;
+  }
+
+  /*---------------------------------------------------------*/
+
+  .doctors__list {
+    grid-template: repeat(4, auto) / repeat(1, 1fr);
+    margin-bottom: 28px;
+    gap: 0;
+  }
+
+
+  .mobile__links {
+    flex-direction: column-reverse;
+  }
+
+  .mobile__link {
+    margin: 0 0 16px 0;
+  }
+
+  /*---------------------------------------------------------*/
+
+  .testimonials__name::after {
+    display: none;
+  }
+
+  .testimonials__text {
+    line-height: 16px;
+  }
+
+
+  .testimonials__desc {
+    margin-bottom: 10px;
+  }
+
+  .testimonials__location {
+    line-height: 16px;
+  }
+
+  .footer__bottom-inner {
+    flex-direction: column;
+  }
+
+  .rights {
+    margin-bottom: 24px;
   }
 }
