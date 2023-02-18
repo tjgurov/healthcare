@@ -307,10 +307,9 @@
   }
 
   .service__link {
-    padding: 10px 50px 20px 50px;
+    padding: 0 50px 10px 50px;
+    min-height: none;
   }
-
-
   .service__text {
     line-height: 12px;
   }
@@ -371,7 +370,7 @@
   }
 
   .service__link {
-    padding: 0 50px 10px 50px;
+    padding: 0 15px 0 15px;
     min-height: none;
   }
 
@@ -393,7 +392,9 @@
   }
 
   /*---------------------------------------------------------*/
-
+  .testimonials__item {
+    padding: 20px 15px 20px 20px;
+  }
   .testimonials__name::after {
     display: none;
   }
